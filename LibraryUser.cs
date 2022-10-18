@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace PCIS_2
 {
     internal class LibraryUser
     {
+        [Key]
         public int ID { get; set; }
         public int PersonID { get; set; }
     }

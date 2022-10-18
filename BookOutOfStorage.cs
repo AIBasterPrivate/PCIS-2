@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace PCIS_2
 {
+    [Keyless]
     internal class BookOutOfStorage
     {
         public int BookID { get; set; }
