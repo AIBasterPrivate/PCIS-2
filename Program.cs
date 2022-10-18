@@ -11,8 +11,8 @@ internal class Program
 
         var optionBuilder = new DbContextOptionsBuilder<DbConnection>();
         var libraryDB = new DbConnection(optionBuilder.UseSqlServer(conf.GetConnectionString("Library")).Options);
-        
 
 
+        int i;
     }
 }
