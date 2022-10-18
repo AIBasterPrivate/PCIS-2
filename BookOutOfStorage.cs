@@ -10,5 +10,8 @@ namespace PCIS_2
         public DateTime TakeAwayTime { get; set; }
         public DateTime GiveAwayTime { get; set; }
         public bool IsReturned { get; set; }
+
+        public Book Book { get; set; } = null!;
+        public LibraryUser LibraryUser { get; set; } = null!;
     }
 }

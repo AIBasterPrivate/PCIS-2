@@ -10,5 +10,6 @@ namespace PCIS_2
         public int AuthorID { get; set; }
         public float Price { get; set; }
 
+        public Author Author { get; set; } = null!;
     }
 }
