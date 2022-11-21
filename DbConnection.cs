@@ -14,11 +14,11 @@ namespace PCIS_2
             Database.EnsureCreated();
         }
 
-        public DbSet<Author> Authors { get; set; } = null!;
-        public DbSet<Book> Books { get; set; } = null!;
-        public DbSet<BookOutOfStorage> BooksOutOfStorage { get; set; } = null!;
-        public DbSet<LibraryUser> LibraryUsers { get; set; } = null!;
-        public DbSet<Person> People { get; set; } = null!;
-        public DbSet<Storage> Storages { get; set; } = null!;
+        public DbSet<Author> Author { get; set; } = null!;
+        public DbSet<Book> Book { get; set; } = null!;
+        public DbSet<BookOutOfStorage> BookOutOfStorage { get; set; } = null!;
+        public DbSet<LibraryUser> LibraryUser { get; set; } = null!;
+        public DbSet<Person> Person { get; set; } = null!;
+        public DbSet<Storage> Storage { get; set; } = null!;
     }
 }
