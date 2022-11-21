@@ -12,7 +12,6 @@ internal class Program
         var optionBuilder = new DbContextOptionsBuilder<DbConnection>();
         var libraryDB = new DbConnection(optionBuilder.UseSqlServer(conf.GetConnectionString("Library")).Options);
 
-        //var res = libraryDB.Author.OrderBy(n => n.firstname).ToList();
         var res = libraryDB.BookOutOfStorage.Include(x => x.LibraryUser).Include(x=>x.Book).Include(x=>x.LibraryUser.Person).Include(x=>x.Book.Author).ToList();
         foreach (var item in res)
         {
